@@ -2,6 +2,10 @@
 
 Perform a complete PQRE reuse gap analysis for the provided request.
 
+If the intake issue or latest user comment explicitly says `Analyze Issue #<N>`,
+use that referenced issue as the primary evidence source and treat the current
+issue as the routing/intake wrapper.
+
 Focus areas (all in scope unless explicitly excluded):
 
 1. Thermal
@@ -26,7 +30,13 @@ Rules:
 - Data Confidence <= 2 is Low Confidence and must be flagged.
 - Recommendation must be exactly one: APPROVE / CONDITIONAL APPROVE / HOLD / REJECT.
 
-Generate these sections in English:
+Section selection priority (highest first):
+
+1. `Required PQRE Analysis` list in the intake issue body
+2. Explicit section list in the latest `@copilot` issue comment
+3. Default section set below
+
+Generate these default sections in English:
 
 1. Executive Summary
 2. Request Classification
@@ -42,6 +52,14 @@ Generate these sections in English:
 Then provide:
 
 11. Traditional Chinese Summary (include Executive Summary + PQRE Recommendation in Traditional Chinese)
+
+Language/output rules:
+
+- If the request says `Output in English and Traditional Chinese`, provide the
+  requested section set in English first, then provide the same requested
+  section set in Traditional Chinese.
+- If the request asks only for `Traditional Chinese Summary`, keep Section 11
+  as summary-only (Executive Summary + PQRE Recommendation).
 
 For Risk Assessment, include an RPN table with:
 
