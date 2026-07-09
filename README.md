@@ -22,6 +22,8 @@ triggered by GitHub issues created from Outlook email intake.
 KnowledgeBase/
   pqre_signoff_criteria.md            ← Minimum evidence requirements per domain
   risk_scoring_criteria.md            ← RPN calculation rules and tier definitions
+reviews/
+  issue-5-pqre-review.md             ← PQRE review output for Issue #5 (PR #2 agent intro)
 README.md
 ```
 
