@@ -20,34 +20,10 @@ jobs:
 script: |
   const issueNumber = context.payload.issue.number;
 
-  const body = `
-@copilot
-
-Use pqre-risk-review-agent.
-
-Analyze this issue directly and return the complete PQRE review in this issue comment.
-
-Do not modify repository files.
-Do not create pull requests.
-
-Required output:
-
-1. Executive Summary
-2. Available Evidence
-3. Missing Evidence
-4. Known Issues
-5. Unknown Risks
-6. Qualification Gaps
-7. Risk Assessment
-8. Required Actions
-9. PQRE Recommendation
-10. Traditional Chinese Summary
-`;
-
   await github.rest.issues.createComment({
     owner: context.repo.owner,
     repo: context.repo.repo,
     issue_number: issueNumber,
-    body
+    body: '@copilot\n\nAnalyze this issue and return a PQRE review in this issue comment.\n\nExecutive Summary\nMissing Evidence\nKnown Issues\nUnknown Risks\nQualification Gaps\nRisk Assessment\nRequired Actions\nPQRE Recommendation'
   });
 
