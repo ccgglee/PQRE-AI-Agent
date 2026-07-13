@@ -32,7 +32,7 @@ recommendation. Any item marked **Blocking** must be resolved before sign-off.
 
 ---
 
-## 3. SI / PI / PDN
+## 3. SI / PI / PDN(Power Delivery Network)
 
 | Evidence Item | Blocking |
 |---------------|----------|
