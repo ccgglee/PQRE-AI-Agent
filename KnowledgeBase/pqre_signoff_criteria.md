@@ -62,9 +62,9 @@ recommendation. Any item marked **Blocking** must be resolved before sign-off.
 | Evidence Item | Blocking |
 |---------------|----------|
 | Component FIT rate or MTBF at new operating conditions | Yes |
-| HTOL (High Temperature Operating Life) test data or extrapolation | Yes |
+| HTOL (High Temperature Operating Life) test data or extrapolation | No |
 | ELFR (Early Life Failure Rate) data if new component stepping | No |
-| Qualification report from component supplier | Yes |
+| Qualification report from component supplier | No |
 | System-level reliability prediction (RBD or FMEA) | No |
 
 ---
@@ -75,7 +75,7 @@ recommendation. Any item marked **Blocking** must be resolved before sign-off.
 |---------------|----------|
 | DFM review sign-off from manufacturing engineering | No |
 | Component placement rule check (IPC-7351 or equivalent) | No |
-| Solder joint reliability data (thermal cycling test) | No |
+| Solder joint reliability data (thermal cycling test) | Yes |
 | Process capability index (Cpk) for critical dimensions | No |
 | AOI / X-ray inspection criteria defined | No |
 
