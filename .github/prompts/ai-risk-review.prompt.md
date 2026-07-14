@@ -66,6 +66,18 @@ For Risk Assessment, include an RPN table with:
 | Domain | Severity (S) | Occurrence (O) | Detection (D) | RPN | Data Confidence | Risk Tier |
 |--------|---------------|----------------|---------------|-----|-----------------|-----------|
 
+Custom section content guidance (used when `Required PQRE Analysis` overrides the default):
+
+- **Action Required (Yes/No)**: Standalone section. State Yes or No, then provide
+  one or two sentences explaining why action is or is not required.
+- **Impact Assessment**: Provide a qualitative impact summary table (Category /
+  Impact Description / Severity), followed by the full RPN table. Include scoring
+  rationale for each in-scope domain. This section replaces "Risk Assessment" when
+  the custom section list does not include a separate "Risk Assessment" section.
+- **Information Gaps**: Provide a numbered table of missing evidence items
+  (# / Missing Item / Domain / Blocking). This section replaces "Missing Evidence"
+  and "Qualification Gaps" when those sections are not in the custom section list.
+
 Email/output gate:
 
 - Any email-style output must be draft only.
