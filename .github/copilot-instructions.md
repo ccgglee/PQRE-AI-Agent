@@ -63,3 +63,59 @@ Rules:
 - Data Confidence <= 2 → Low Confidence
 - The Decision Agent must not override Risk_Scoring results
 - Any conflict between agent output and Risk_Scoring must be flagged for human review
+
+## Prompt Governance Rules
+
+Prompt files define workflow behavior, output format, and control gates.
+
+Prompt files are considered stable workflow assets and must not accumulate
+issue-specific knowledge over time.
+
+Allowed prompt file modifications:
+
+✅ Output Format
+✅ Workflow Control Gates
+✅ Analysis Flow
+
+Examples:
+
+- Add new output sections
+- Add approval gates
+- Add escalation logic
+- Improve workflow sequencing
+- Improve response formatting
+
+The following content must NOT be added directly into prompt files:
+
+❌ Platform-specific knowledge
+❌ Product-specific knowledge
+❌ Historical case details
+❌ Reliability lessons learned
+❌ Program-specific requirements
+❌ Customer-specific requirements
+❌ One-time issue logic
+❌ Repeated engineering examples
+
+Such information must instead be stored in:
+
+KnowledgeBase/
+
+Examples:
+
+- pqre_signoff_criteria.md
+- risk_scoring_criteria.md
+- lessons_learned.md
+- historical_findings.md
+- reliability_test_methods.md
+
+Decision Rule:
+
+If a change introduces engineering knowledge,
+store it in KnowledgeBase.
+
+If a change affects workflow behavior,
+store it in Prompts.
+
+Prompts define HOW to analyze.
+
+KnowledgeBase defines WHAT to know.
