@@ -29,6 +29,54 @@ The agent reads the following fields from the GitHub issue body:
 | Subject | Short title of the engineering change request |
 | Body | Free-text description from the originating email |
 | Required PQRE Analysis | Requested output sections (may override defaults) |
+| Comments | Follow-up discussion and clarifications |
+| Attachments | Files attached to the issue |
+| Linked Documents | URLs or repository references |
+| Evidence Folder | Files stored under repository evidence locations |
+
+## Evidence Fields
+The agent must collect evidence from all available Fields before44performing a PQRE review.
+
+Review order:
+
+1. GitHub Issue Body
+2. GitHub Issue Comments
+3. Issue Attachments
+4. Linked Documents
+5. Repository Evidence Files
+
+Repository evidence locations:
+
+- /evidence/
+- /attachments/
+- /reviews/
+  
+If a referenced file cannot be accessed,61record it under Missing Evidence.
+
+## Evidence Completeness Check
+
+Before generating a final review,
+verify all evidence sources.
+
+Checklist:
+
+□ Issue Body
+
+□ Issue Comments
+
+□ Attachments
+
+□ Linked Documents
+
+□ Evidence Files
+
+Rules:
+
+- Do not assume attachment contents.
+- Do not fabricate evidence.
+- Missing files must be reported.
+- Critical missing evidence prevents approval.
+- Review is incomplete until all accessible evidence is inspected.
 
 ## Review Categories
 
@@ -46,19 +94,50 @@ Mark domains as N/A only when the request explicitly excludes them.
 
 ## Required Output Sections
 
-Every review must include all eleven sections below.
+Every review must include all twelve sections below.
 
-1. **Executive Summary** — One-paragraph plain-language summary
-2. **Request Classification** — Domain tags, risk tier, action required (Yes/No)
-3. **Available Evidence** — What is confirmed in the issue or linked documents
-4. **Missing Evidence** — What is absent and required before sign-off
-5. **Known Issues** — Documented problems already on record
-6. **Unknown Risks** — Potential failure modes not yet characterized
-7. **Qualification Gaps** — Delta between current qualification status and required qualification
-8. **Risk Assessment** — RPN table (Severity × Occurrence × Detection) per domain
-9. **Required Actions** — Numbered action list with owner placeholder and due-date placeholder
-10. **PQRE Recommendation** — One of: APPROVE / CONDITIONAL APPROVE / HOLD / REJECT
-11. **Bilingual Summary** — Sections 1 and 10 repeated in Traditional Chinese (繁體中文)
+1. **Executive Summary**
+   - One-paragraph plain-language summary
+
+2. **Request Classification**
+   - Domain tags
+   - Risk tier
+   - Action required (Yes/No)
+
+3. **Evidence Inventory**
+   - List all reviewed evidence sources
+   - Include Issue Body, Comments, Attachments,
+     Linked Documents, and Repository Files
+
+4. **Available Evidence**
+   - Confirmed information supported by evidence
+
+5. **Missing Evidence**
+   - Required evidence not available for review
+
+6. **Known Issues**
+   - Documented problems already on record
+
+7. **Unknown Risks**
+   - Potential failure modes not yet characterized
+
+8. **Qualification Gaps**
+   - Delta between current and required qualification
+
+9. **Risk Assessment**
+   - RPN table (Severity × Occurrence × Detection)
+
+10. **Required Actions**
+   - Numbered action list with owner and due date placeholders
+
+11. **PQRE Recommendation**
+   - APPROVE / CONDITIONAL APPROVE / HOLD / REJECT
+
+12. **Bilingual Summary**
+   - Executive Summary
+   - PQRE Recommendation
+   - Traditional Chinese (繁體中文)
+``
 
 ## Guardrails
 
@@ -69,6 +148,13 @@ Every review must include all eleven sections below.
 - **Data Confidence ≤ 2** triggers Low Confidence flag on the affected domain.
 - **Draft-never-send rule:** Any email drafted as part of follow-up must be marked `DRAFT — DO NOT SEND`.  Human approval is required before any external communication.
 - **GitHub issues are the primary decision log.** Post the completed review as a comment on the originating issue.
+- **Evidence-first rule:** Review all accessible evidence before generating a final recommendation.
+- **Evidence traceability rule:** Explicitly list every reviewed evidence source, including issue body, issue comments, attachments, linked documents, and repository evidence files.
+- **Attachment review rule:** When attachments are available, review attachment content in addition to email or issue text. Do not rely solely on summary text when supporting documents exist.
+- **Conflict resolution rule:** If information conflicts between email text and supporting documents, prioritize the most detailed supporting evidence and clearly document the conflict.
+- **Missing attachment rule:** If a referenced attachment, document, or evidence file cannot be accessed, record it under `Missing Evidence` and reduce review confidence accordingly.
+- **Review completeness rule:** The review is not considered complete until all accessible supporting evidence has been inspected and accounted for in the Evidence Inventory.
+- **Qualification decision rule:** Recommendation status must be consistent with available evidence, identified risks, qualification gaps, and RPN results. Do not issue APPROVE when critical evidence, qualification data, or risk mitigations are missing.
 
 ## Knowledge Base References
 
