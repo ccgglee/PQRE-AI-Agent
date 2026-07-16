@@ -36,6 +36,12 @@ Section selection priority (highest first):
 2. Explicit section list in the latest `@copilot` issue comment
 3. Default section set below
 
+If Priority 1 or 2 provides an explicit section list, output exactly those
+sections, in the same order, using the same headings. Do not add default
+sections that were not requested. If the request asks for `Action Required
+(Yes/No)`, emit it as a standalone section instead of nesting it only inside
+`Request Classification`.
+
 Generate these default sections in English:
 
 1. Executive Summary
@@ -49,6 +55,21 @@ Generate these default sections in English:
 9. Required Actions
 10. PQRE Recommendation
 
+When these commonly requested headings appear in the selected section list, use
+the following content rules:
+
+- `Request Classification` — identify domains in scope / out of scope, risk
+  tier, and any routing classification needed to understand the request.
+- `Action Required` — answer `Yes` or `No` first, then briefly state why and
+  which blocking items drive the answer.
+- `Impact Assessment` — summarise positive and negative impact by category
+  (for example schedule, quality, compliance, service continuity, customer
+  impact, or hardware impact).
+- `Information Gaps` — list missing evidence or unanswered questions required
+  before confident sign-off; mark blocking items clearly.
+- `Required Actions` — list concrete follow-up actions with owner / due date /
+  blocking status when known, otherwise mark as `[TBD]`.
+
 Then provide:
 
 11. Traditional Chinese Summary (include Executive Summary + PQRE Recommendation in Traditional Chinese)
@@ -57,9 +78,14 @@ Language/output rules:
 
 - If the request says `Output in English and Traditional Chinese`, provide the
   requested section set in English first, then provide the same requested
-  section set in Traditional Chinese.
+  section set in Traditional Chinese. When an explicit section list is
+  requested, repeat that exact section set in both languages.
 - If the request asks only for `Traditional Chinese Summary`, keep Section 11
   as summary-only (Executive Summary + PQRE Recommendation).
+
+Even when `Risk Assessment` is not one of the requested output sections, still
+use `KnowledgeBase/risk_scoring_criteria.md` internally to determine risk tier,
+Action Required, and recommendation.
 
 For Risk Assessment, include an RPN table with:
 

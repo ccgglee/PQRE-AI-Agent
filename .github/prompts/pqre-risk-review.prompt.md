@@ -67,7 +67,22 @@ Use the scoring guide in `KnowledgeBase/risk_scoring_criteria.md`.
 
 ## Step 5 — Generate the Full Review
 
-Output all eleven sections listed below. Use the exact headings.
+If the intake issue body contains a `Required PQRE Analysis` list, output
+exactly those requested sections, in the same order, using the same headings.
+Do not add unrequested default sections.
+
+If no explicit section list is provided, output the default eleven sections
+listed below. Use the exact headings.
+
+If `Action Required (Yes/No)` is explicitly requested, emit it as a standalone
+section rather than only a bullet inside `Request Classification`.
+
+If `Impact Assessment` is explicitly requested, summarise positive and negative
+impact by category (for example schedule, quality, compliance, service
+availability, hardware impact, or customer impact).
+
+If `Information Gaps` is explicitly requested, list missing evidence and open
+questions in a table with blocking status.
 
 ### 1. Executive Summary
 
@@ -147,6 +162,11 @@ Repeat Sections 1 and 10 in Traditional Chinese.
 
 ## Output Rules
 
+- If the request says `Output in English and Traditional Chinese`, provide the
+  selected section set in English first, then repeat the same selected section
+  set in Traditional Chinese.
+- If no full bilingual output is requested, keep Section 11 as the Traditional
+  Chinese summary only.
 - Post the completed review as a comment on the originating GitHub issue.
 - The issue comment is the primary decision log entry.
 - Any email draft generated for follow-up must be labelled:
@@ -155,3 +175,6 @@ Repeat Sections 1 and 10 in Traditional Chinese.
   the human decision reviewer.
 - If Data Confidence ≤ 2 in any domain, add the label `low-confidence` to
   the issue.
+- Even when `Risk Assessment` is not one of the requested output sections, use
+  `KnowledgeBase/risk_scoring_criteria.md` internally to determine risk tier,
+  Action Required, and recommendation.
