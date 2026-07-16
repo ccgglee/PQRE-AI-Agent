@@ -43,3 +43,15 @@ Before recommendation (APPROVE / CONDITIONAL APPROVE / HOLD / REJECT), confirm:
 1. Platform identity is explicitly confirmed (SRF or CWF).
 2. SI evidence is platform-matched, or formal SI-N/A rationale is approved.
 3. Thermal, PDN, and reliability evidence are based on the same platform baseline.
+
+---
+
+## 4) Xeon Product Line Mapping (for SRF/CWF Distinction)
+
+| Product Line | Typical Naming | Use Case / Positioning | Relationship to SRF/CWF |
+|---|---|---|---|
+| Xeon E Series | Xeon E-24xx, E-23xx | Entry server / workstation class | Not part of SRF/CWF |
+| Xeon D Series | Xeon D-xxxx | SoC, edge, networking | Generally not classified under SRF/CWF |
+| Xeon Scalable (legacy naming) | Bronze / Silver / Gold / Platinum (e.g., 84xx/64xx) | Mainstream dual-/multi-socket datacenter | Different generation naming system from SRF/CWF |
+| Xeon 6 (P-core) | Xeon 6 with P-cores | High-performance core line | Maps to Granite Rapids line (not CWF) |
+| Xeon 6 (E-core) | Xeon 6 with E-cores | High core-density line | SRF/CWF belong to this line |
