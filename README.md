@@ -46,6 +46,11 @@ Supplier Readiness, and Regulatory.
 
 Or apply the label `ai-risk-review` to any issue to trigger automatic analysis.
 
+If an intake issue includes a `Required PQRE Analysis` section, the agent uses
+that exact section list in the same order. If the issue also requests `Output
+in English and Traditional Chinese`, the agent returns the requested section
+set in both languages.
+
 ---
 
 ## Example — Issue #1
