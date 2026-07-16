@@ -170,14 +170,5 @@ Therefore, my current understanding is:
 ANC (Anderson City) = Main Pine Stream RP platform (1S/2S)
 Sabre City = 1S-only concept/POC platform, not yet a committed production RP platform
 
-###Item	ANC (Anderson City) / Sabre City
 
-####Positioning	Official Pine Stream RP Baseboard	POC / Product Concept
-####Socket Support	1S and 2S /	1S only
-####UPI Support	Supports 2S UPI (4x16 or 2x16) /	No UPI support
-####Multi-Socket Chassis	Supported	/ Not supported
-####Closed Chassis	Supports 3U and 5U configurations /	Not supported
-####Open Chassis	Supported	/ Supported
-####Primary Purpose	Official platform development, validation, and production-oriented platform	SSP (Sub-Socket Partitioning) / concept validation
-####Status	Pine Stream baseline platform	/ Not yet officially included in the product roadmap
 
