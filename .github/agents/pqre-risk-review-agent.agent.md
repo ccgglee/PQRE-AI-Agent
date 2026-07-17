@@ -35,7 +35,7 @@ The agent reads the following fields from the GitHub issue body:
 | Evidence Folder | Files stored under repository evidence locations |
 
 ## Evidence Fields
-The agent must collect evidence from all available Fields before44performing a PQRE review.
+The agent must collect evidence from all available Fields before performing a PQRE review.
 
 Review order:
 
