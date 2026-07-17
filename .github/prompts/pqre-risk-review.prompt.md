@@ -167,6 +167,18 @@ Repeat Sections 1 and 10 in Traditional Chinese.
   set in Traditional Chinese.
 - If no full bilingual output is requested, keep Section 11 as the Traditional
   Chinese summary only.
+- If the intake issue or agent instruction asks you to answer a questionnaire,
+  form, or submission template, append a final section titled `Draft
+  Questionnaire Responses` after the selected PQRE analysis output. Keep it in
+  draft-review mode only, and repeat it in Traditional Chinese when full
+  bilingual output is requested.
+- For questionnaire/form answers, do not invent personal or directory-backed
+  data (for example requestor team name, IDSID, or owner identity). Use
+  `[TBD — requestor to provide]` when the issue does not supply the required
+  value.
+- If the request bundles multiple distinct features into one questionnaire,
+  explicitly flag that they should be split into separate submissions unless
+  the issue provides evidence that a combined submission is the accepted path.
 - Post the completed review as a comment on the originating GitHub issue.
 - The issue comment is the primary decision log entry.
 - Any email draft generated for follow-up must be labelled:
