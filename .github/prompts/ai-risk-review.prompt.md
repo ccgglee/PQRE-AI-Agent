@@ -6,6 +6,22 @@ If the intake issue or latest user comment explicitly says `Analyze Issue #<N>`,
 use that referenced issue as the primary evidence source and treat the current
 issue as the routing/intake wrapper.
 
+Apply a hardware scope gate before detailed analysis:
+
+- First determine whether the request affects **platform hardware** or
+  **validation hardware**.
+- Requests that are not related to hardware (for example firmware-only,
+  software-only, or process-only asks such as a BMC firmware change with no
+  hardware impact) are **OUT OF SCOPE** for this PQRE hardware workflow and
+  must receive a **REJECT** recommendation.
+- If the intake bundles multiple features or questionnaire items together,
+  classify each item as `IN SCOPE`, `OUT OF SCOPE`, or `MIXED`, and recommend
+  splitting the request unless combined routing is clearly intended.
+- When the request asks whether reliability stress is affected, answer that
+  question specifically in terms of impact to platform hardware or validation
+  hardware. If no hardware effect is shown, reject the item rather than
+  analyzing it as a hardware qualification request.
+
 Focus areas (all in scope unless explicitly excluded):
 
 1. Thermal
@@ -59,7 +75,8 @@ When these commonly requested headings appear in the selected section list, use
 the following content rules:
 
 - `Request Classification` — identify domains in scope / out of scope, risk
-  tier, and any routing classification needed to understand the request.
+  tier, hardware-scope decision, and any routing classification needed to
+  understand the request.
 - `Action Required` — answer `Yes` or `No` first, then briefly state why and
   which blocking items drive the answer.
 - `Impact Assessment` — summarise positive and negative impact by category
@@ -69,6 +86,12 @@ the following content rules:
   before confident sign-off; mark blocking items clearly.
 - `Required Actions` — list concrete follow-up actions with owner / due date /
   blocking status when known, otherwise mark as `[TBD]`.
+- `Draft Questionnaire Responses` — append this final section when the intake
+  or latest user comment asks you to answer a questionnaire, form, checklist,
+  or submission template. Keep the answers in draft-only mode, use `[TBD]` for
+  missing identity / ownership / directory-backed fields, do not invent names
+  or personal details, and explicitly reject any item that is not related to
+  platform hardware or validation hardware.
 
 Then provide:
 
@@ -80,6 +103,9 @@ Language/output rules:
   requested section set in English first, then provide the same requested
   section set in Traditional Chinese. When an explicit section list is
   requested, repeat that exact section set in both languages.
+- If a questionnaire/form answer set is requested, append `Draft Questionnaire
+  Responses` to the English output and a corresponding Traditional Chinese
+  draft questionnaire section to the Traditional Chinese output.
 - If the request asks only for `Traditional Chinese Summary`, keep Section 11
   as summary-only (Executive Summary + PQRE Recommendation).
 

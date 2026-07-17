@@ -18,6 +18,22 @@ Read the GitHub issue provided as context. Extract:
 
 ## Step 2 — Classify the Request
 
+Before assigning domain tags, apply a hardware scope gate:
+
+- First determine whether the request affects **platform hardware** or
+  **validation hardware**.
+- Requests that are not related to hardware (for example firmware-only,
+  software-only, or process-only asks such as a BMC firmware change with no
+  hardware impact) are **OUT OF SCOPE** for this PQRE hardware review and must
+  receive a **REJECT** recommendation.
+- If the intake bundles multiple features or questionnaire items together,
+  classify each item as `IN SCOPE`, `OUT OF SCOPE`, or `MIXED`, and recommend
+  splitting the request unless combined routing is clearly intended.
+- When the request asks whether reliability stress is affected, answer that
+  question specifically in terms of impact to platform hardware or validation
+  hardware. If no hardware effect is shown, reject the item rather than
+  analyzing it as a hardware qualification request.
+
 Assign one or more domain tags from the list below. Mark each domain as
 `IN SCOPE` or `OUT OF SCOPE` based on the description.
 
@@ -84,6 +100,13 @@ availability, hardware impact, or customer impact).
 If `Information Gaps` is explicitly requested, list missing evidence and open
 questions in a table with blocking status.
 
+If the intake or latest user comment asks you to answer a questionnaire, form,
+checklist, or submission template, append a final section titled `Draft
+Questionnaire Responses`. Keep questionnaire output in draft-only mode, use
+`[TBD]` for missing identity / ownership / directory-backed fields, do not
+invent names or personal details, and explicitly reject any item that is not
+related to platform hardware or validation hardware.
+
 ### 1. Executive Summary
 
 One paragraph. Plain language. State what was requested, what evidence exists,
@@ -92,6 +115,7 @@ and the preliminary risk posture.
 ### 2. Request Classification
 
 - Domains in scope:
+- Hardware scope decision:
 - Risk Tier:
 - Action Required: Yes / No
 
@@ -165,6 +189,9 @@ Repeat Sections 1 and 10 in Traditional Chinese.
 - If the request says `Output in English and Traditional Chinese`, provide the
   selected section set in English first, then repeat the same selected section
   set in Traditional Chinese.
+- If a questionnaire/form answer set is requested, append `Draft Questionnaire
+  Responses` to the English output and a corresponding Traditional Chinese
+  draft questionnaire section to the Traditional Chinese output.
 - If no full bilingual output is requested, keep Section 11 as the Traditional
   Chinese summary only.
 - Post the completed review as a comment on the originating GitHub issue.

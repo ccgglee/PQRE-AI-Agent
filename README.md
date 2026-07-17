@@ -51,6 +51,11 @@ that exact section list in the same order. If the issue also requests `Output
 in English and Traditional Chinese`, the agent returns the requested section
 set in both languages.
 
+If the intake explicitly asks for questionnaire or form-completion guidance,
+the agent appends draft questionnaire responses. Questionnaire answers remain
+draft-only, use `[TBD]` placeholders for missing identity fields, and reject
+items that are not related to platform hardware or validation hardware.
+
 ---
 
 ## Example — Issue #1
