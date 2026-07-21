@@ -102,6 +102,34 @@ recommendation. Any item marked **Blocking** must be resolved before sign-off.
 | CE / FCC / UL marks — applicable certifications confirmed | No |
 | Export classification (ECCN) — no change or re-classification completed | No |
 | Battery / chemical substance declaration (if applicable) | No |
+| OxM regulatory execution plan and schedule (when SOW-based OxM engagement applies) | Yes |
+| OxM preliminary EMC test results or engineering compliance assessment (when SOW-based OxM engagement applies) | No |
+
+---
+
+## 8a. SOW-Based OxM Regulatory Ownership Rule
+
+When a Statement of Work (SOW) governs the manufacturing engagement, the regulatory
+ownership assignment **must be derived from the SOW contract language**, not assumed
+from the absence of a named individual in the issue body.
+
+**Default SOW ownership pattern (Intel OxM SOW, Section 4.1):**
+
+| Activity | Owner | Intel Role |
+|----------|-------|------------|
+| Regulatory program execution plan and schedule | **OxM** | Review and Approve |
+| EMC testing (radiated, conducted, immunity) at accredited lab | **OxM** | Review test report |
+| Preliminary EMC test results or engineering compliance assessment | **OxM** | Accept / request re-test |
+| RoHS / REACH SVHC compliance declarations for BOM | **OxM** | Review |
+| Identification of design changes with compliance impact | **OxM** | Joint impact assessment |
+| Final regulatory sign-off and market-entry approval | Intel | Sign-off owner |
+
+> **IMPORTANT — AI Agent Rule:**  
+> When SOW Section 4 or equivalent contract language is present, the AI agent
+> **must not** conclude "no obvious responsible party" for regulatory activities.
+> OxM is the contractually-designated primary owner. If the SOW is not available,
+> the AI agent must explicitly flag this as an information gap and request the SOW
+> rather than defaulting to "no owner assigned."
 
 ---
 
