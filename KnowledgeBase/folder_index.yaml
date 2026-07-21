@@ -1,1 +1,20 @@
+folders:
 
+  - folder: Derating
+
+    path:
+      Derating
+
+    files:
+
+      - CQN_Component_Derating_D42625_r05.2.doc
+
+      - Derating_Tool_BKM_rev_0v12.pdf
+
+      - DL-0002935 (2).pdf
+
+      - RE_FS1 Boards Derating Analysis.msg
+
+    subfolders:
+
+      - Server chassis derating
