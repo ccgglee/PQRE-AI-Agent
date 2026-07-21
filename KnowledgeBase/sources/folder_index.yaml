@@ -8,7 +8,7 @@ sources:
 
     sharepoint_site: PVC Boards
 
-    path: Reports from Wistron/reliability report
+    root_folder: Reports from Wistron/reliability report
 
     folders:
 
