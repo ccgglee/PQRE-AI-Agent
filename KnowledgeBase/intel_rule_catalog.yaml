@@ -1,1 +1,1095 @@
+# intel_rule_catalog.yaml
+# Generated from SharePoint Excel export: query (3).iqy.xlsx
+# Scope: Reports from Wistron/reliability report/Reference data/Intel Rule
+# Purpose: Catalog folders/rules only. File-level inventory should be kept in folder_index.yaml.
+
+catalog:
+  name: "Intel Rule Catalog"
+  source_system: "SharePoint"
+  source_file: "query (3).iqy.xlsx"
+  base_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule"
+  folder_count: 77
+  item_count_in_excel: 196
+  note: "This catalog maps Intel Rule folders and subfolders. Do not store confidential document contents here."
+
+intel_rules:
+  - id: "Acoustic_Vibration"
+    name: "Acoustic Vibration"
+    category: "Acoustic Vibration"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Acoustic Vibration"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Acoustic Vibration"
+    modified: "2023-10-04 01:41:28"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Board_Level_Thermal_Mechanical_Reliability_Certifications"
+    name: "Board-Level Thermal Mechanical Reliability-Certifications"
+    category: "Board-Level Thermal Mechanical Reliability-Certifications"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Board-Level Thermal Mechanical Reliability-Certifications"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Board-Level Thermal Mechanical Reliability-Certifications"
+    modified: "2024-11-14 23:02:00"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Board Level Thermal Mechanical Reliability Certifications"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "correct_palletization_for_this_OAM_package"
+    name: "correct palletization for this OAM package"
+    category: "correct palletization for this OAM package"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "correct palletization for this OAM package"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/correct palletization for this OAM package"
+    modified: "2023-12-27 18:21:31"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Derating"
+    name: "Derating"
+    category: "Derating"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Derating"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Derating"
+    modified: "2023-10-31 03:13:14"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Derating_Server_chassis_derating"
+    name: "Server chassis derating"
+    category: "Derating"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Derating"
+    relative_path: "Derating/Server chassis derating"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Derating/Server chassis derating"
+    modified: "2024-07-15 16:19:14"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Derating"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "EDM"
+    name: "EDM"
+    category: "EDM"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "EDM"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/EDM"
+    modified: "2023-12-26 22:24:27"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "FA_flow"
+    name: "FA flow"
+    category: "FA flow"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "FA flow"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/FA flow"
+    modified: "2023-10-11 22:22:47"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "FOQM"
+    name: "FOQM"
+    category: "FOQM"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "FOQM"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/FOQM"
+    modified: "2023-10-29 03:49:40"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "FOQM_For_PVC_product"
+    name: "For PVC product"
+    category: "FOQM"
+    item_type: "Folder"
+    level: 1
+    parent_path: "FOQM"
+    relative_path: "FOQM/For PVC product"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/FOQM/For PVC product"
+    modified: "2023-10-29 18:18:45"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "FOQM"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "FOQM_the_process_health_goals_and_yield_goals"
+    name: "the process health goals and yield goals"
+    category: "FOQM"
+    item_type: "Folder"
+    level: 1
+    parent_path: "FOQM"
+    relative_path: "FOQM/the process health goals and yield goals"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/FOQM/the process health goals and yield goals"
+    modified: "2024-11-22 23:33:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "FOQM"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "HSD_system"
+    name: "HSD system"
+    category: "HSD system"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "HSD system"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/HSD system"
+    modified: "2024-11-14 23:49:33"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Inspection_and_cosmetic_spec"
+    name: "Inspection and cosmetic spec"
+    category: "Inspection and cosmetic spec"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Inspection and cosmetic spec"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Inspection and cosmetic spec"
+    modified: "2024-12-12 00:59:13"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Intel_GPU_structure"
+    name: "Intel GPU structure"
+    category: "Intel GPU structure"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Intel GPU structure"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Intel GPU structure"
+    modified: "2024-11-11 01:11:13"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Intel_Quality_and_Reliability_Fundamentals"
+    name: "Intel Quality and Reliability Fundamentals"
+    category: "Intel Quality and Reliability Fundamentals"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Intel Quality and Reliability Fundamentals"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Intel Quality and Reliability Fundamentals"
+    modified: "2024-04-02 03:17:04"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Intel_Automatic_In_Board_Characterization_AIBC_for_Customer_Design_Quality_Check"
+    name: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    category: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    modified: "2023-10-16 01:12:08"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Intel ® Automatic In Board Characterization (AIBC) for Customer Design Quality Check"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Intel_Automatic_In_Board_Characterization_AIBC_for_Customer_Design_Quality_Check_lesson_learned"
+    name: "lesson learned"
+    category: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    relative_path: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check/lesson learned"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check/lesson learned"
+    modified: "2024-11-20 14:43:50"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Intel_Automatic_In_Board_Characterization_AIBC_for_Customer_Design_Quality_Check_training_data"
+    name: "training data"
+    category: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    relative_path: "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check/training data"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check/training data"
+    modified: "2024-12-29 21:22:33"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Intel ® Automatic In-Board Characterization (AIBC) for Customer Design Quality Check"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "iQUAL"
+    name: "iQUAL"
+    category: "iQUAL"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "iQUAL"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/iQUAL"
+    modified: "2025-05-18 20:55:09"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "ISO"
+    name: "ISO"
+    category: "ISO"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "ISO"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/ISO"
+    modified: "2024-03-20 03:30:45"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement"
+    name: "Lab and ODM requirement"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Lab and ODM requirement"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement"
+    modified: "2024-12-04 15:57:25"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit"
+    name: "all audit"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Lab and ODM requirement"
+    relative_path: "Lab and ODM requirement/all audit"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit"
+    modified: "2024-12-04 15:57:59"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_Accton"
+    name: "Accton"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Lab and ODM requirement/all audit"
+    relative_path: "Lab and ODM requirement/all audit/Accton"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/Accton"
+    modified: "2025-04-28 20:13:20"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_Accton_audit_preparation"
+    name: "audit preparation"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/all audit/Accton"
+    relative_path: "Lab and ODM requirement/all audit/Accton/audit preparation"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/Accton/audit preparation"
+    modified: "2025-04-28 20:15:09"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_CoolJag"
+    name: "CoolJag"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Lab and ODM requirement/all audit"
+    relative_path: "Lab and ODM requirement/all audit/CoolJag"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/CoolJag"
+    modified: "2024-12-04 15:58:09"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_Intertek"
+    name: "Intertek"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Lab and ODM requirement/all audit"
+    relative_path: "Lab and ODM requirement/all audit/Intertek"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/Intertek"
+    modified: "2024-12-04 15:58:09"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_Supermicro"
+    name: "Supermicro"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Lab and ODM requirement/all audit"
+    relative_path: "Lab and ODM requirement/all audit/Supermicro"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/Supermicro"
+    modified: "2024-12-04 15:58:09"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_Supermicro_1206_picture"
+    name: "1206 picture"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/all audit/Supermicro"
+    relative_path: "Lab and ODM requirement/all audit/Supermicro/1206 picture"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/Supermicro/1206 picture"
+    modified: "2024-12-04 15:58:11"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_SuperPCB"
+    name: "SuperPCB"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Lab and ODM requirement/all audit"
+    relative_path: "Lab and ODM requirement/all audit/SuperPCB"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/SuperPCB"
+    modified: "2024-12-04 15:58:09"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_all_audit_Wistron"
+    name: "Wistron"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Lab and ODM requirement/all audit"
+    relative_path: "Lab and ODM requirement/all audit/Wistron"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/all audit/Wistron"
+    modified: "2024-12-04 15:58:09"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab"
+    name: "Lab"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Lab and ODM requirement"
+    relative_path: "Lab and ODM requirement/Lab"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab"
+    modified: "2024-12-04 15:57:36"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification"
+    name: "lab certification"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Lab and ODM requirement/Lab"
+    relative_path: "Lab and ODM requirement/Lab/lab certification"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification"
+    modified: "2024-12-04 15:57:45"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_Aivres_Etron_Vietnam_site"
+    name: "Aivres Etron Vietnam site"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/Aivres Etron Vietnam site"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/Aivres Etron Vietnam site"
+    modified: "2024-12-08 19:26:47"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_certification_template"
+    name: "certification template"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/certification template"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/certification template"
+    modified: "2024-12-04 15:54:14"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_GPAC_Intel_internal"
+    name: "GPAC Intel internal"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/GPAC Intel internal"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/GPAC Intel internal"
+    modified: "2024-12-04 15:56:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_GPAC_request_in_LIM"
+    name: "GPAC request in LIM"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/GPAC request in LIM"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/GPAC request in LIM"
+    modified: "2024-12-04 15:56:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_Intertek"
+    name: "Intertek"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/Intertek"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/Intertek"
+    modified: "2024-12-04 15:56:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_iST"
+    name: "iST"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/iST"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/iST"
+    modified: "2024-12-04 15:56:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_Ma_Tek"
+    name: "Ma-Tek"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/Ma-Tek"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/Ma-Tek"
+    modified: "2024-12-04 15:56:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Ma Tek"
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Lab_and_ODM_requirement_Lab_lab_certification_Wistron_NTC"
+    name: "Wistron NTC"
+    category: "Lab and ODM requirement"
+    item_type: "Folder"
+    level: 3
+    parent_path: "Lab and ODM requirement/Lab/lab certification"
+    relative_path: "Lab and ODM requirement/Lab/lab certification/Wistron NTC"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Lab and ODM requirement/Lab/lab certification/Wistron NTC"
+    modified: "2024-12-04 15:56:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Lab and ODM requirement"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "low_volume_SRA_and_requirements_for_Revenue_Shipment_at_Engineering_Phase"
+    name: "low volume SRA and requirements for Revenue Shipment at Engineering Phase"
+    category: "low volume SRA and requirements for Revenue Shipment at Engineering Phase"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "low volume SRA and requirements for Revenue Shipment at Engineering Phase"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/low volume SRA and requirements for Revenue Shipment at Engineering Phase"
+    modified: "2024-11-19 22:33:54"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "LTS"
+    name: "LTS"
+    category: "LTS"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "LTS"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/LTS"
+    modified: "2024-11-16 17:23:07"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "OPS_review"
+    name: "OPS review"
+    category: "OPS review"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "OPS review"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/OPS review"
+    modified: "2024-04-03 01:10:22"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "ORM"
+    name: "ORM"
+    category: "ORM"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "ORM"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/ORM"
+    modified: "2025-05-18 17:31:30"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "SBL"
+    name: "SBL"
+    category: "SBL"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "SBL"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/SBL"
+    modified: "2024-11-27 18:18:57"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "SBL_Past_case"
+    name: "Past case"
+    category: "SBL"
+    item_type: "Folder"
+    level: 1
+    parent_path: "SBL"
+    relative_path: "SBL/Past case"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/SBL/Past case"
+    modified: "2024-11-27 18:19:06"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "SBL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Server"
+    name: "Server"
+    category: "Server"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Server"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Server"
+    modified: "2024-11-07 14:47:54"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Server_cosmetic"
+    name: "cosmetic"
+    category: "Server"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Server"
+    relative_path: "Server/cosmetic"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Server/cosmetic"
+    modified: "2024-11-22 22:37:49"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Server"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Server_Node_L6_fibal_Server_assembly_line_qualification"
+    name: "Node L6  fibal (Server assembly line)  qualification"
+    category: "Server"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Server"
+    relative_path: "Server/Node L6  fibal (Server assembly line)  qualification"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Server/Node L6  fibal (Server assembly line)  qualification"
+    modified: "2024-11-10 17:56:15"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Server"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Server_Server_s_design_review_checklist"
+    name: "Server’s design review checklist"
+    category: "Server"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Server"
+    relative_path: "Server/Server’s design review checklist"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Server/Server’s design review checklist"
+    modified: "2024-11-07 14:48:56"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Server"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life"
+    name: "Shelf Life"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Shelf Life"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life"
+    modified: "2023-09-29 17:36:49"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Expired_Non_Intel_Material_Disposition_Guidelines"
+    name: "Expired Non-Intel Material Disposition Guidelines"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/Expired Non-Intel Material Disposition Guidelines"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Expired Non-Intel Material Disposition Guidelines"
+    modified: "2023-11-05 19:35:52"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Expired Non Intel Material Disposition Guidelines"
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Extend_PCB"
+    name: "Extend PCB"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/Extend PCB"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Extend PCB"
+    modified: "2023-11-16 00:04:32"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Extend_PCB_Pass_spec"
+    name: "Pass spec"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Shelf Life/Extend PCB"
+    relative_path: "Shelf Life/Extend PCB/Pass spec"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Extend PCB/Pass spec"
+    modified: "2024-11-04 01:31:03"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Extend_PCB_PCB_with_LTS_process"
+    name: "PCB with LTS process"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Shelf Life/Extend PCB"
+    relative_path: "Shelf Life/Extend PCB/PCB with LTS process"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Extend PCB/PCB with LTS process"
+    modified: "2024-11-17 16:34:18"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_FGs_and_ship_out_to_MYA4_can_store_at_Intel_warehouse_for_years_out_to_MYA4_can_store_at_Intel_warehouse_for_"
+    name: "FGs and ship out to MYA4 can store at Intel warehouse for years out to MYA4, can store at Intel warehouse for years"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/FGs and ship out to MYA4 can store at Intel warehouse for years out to MYA4, can store at Intel warehouse for years"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/FGs and ship out to MYA4 can store at Intel warehouse for years out to MYA4, can store at Intel warehouse for years"
+    modified: "2023-11-03 00:50:36"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Finished_Goods_Expiration_for_Boards"
+    name: "Finished Goods Expiration for Boards"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/Finished Goods Expiration for Boards"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Finished Goods Expiration for Boards"
+    modified: "2025-04-14 22:57:44"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Intel_Doc"
+    name: "Intel Doc"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/Intel Doc"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Intel Doc"
+    modified: "2024-08-13 19:09:06"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_judgement_post_bake_120C_4hrs"
+    name: "judgement post bake 120C 4hrs"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/judgement post bake 120C 4hrs"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/judgement post bake 120C 4hrs"
+    modified: "2023-11-05 21:54:12"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Packing_material"
+    name: "Packing material"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/Packing material"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Packing material"
+    modified: "2024-11-24 19:19:54"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Silicon"
+    name: "Silicon"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/Silicon"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Silicon"
+    modified: "2023-09-29 17:37:07"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Silicon_Arno_River"
+    name: "Arno River"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 2
+    parent_path: "Shelf Life/Silicon"
+    relative_path: "Shelf Life/Silicon/Arno River"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Silicon/Arno River"
+    modified: "2023-09-29 17:37:32"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Shelf_Life_Solderability"
+    name: "Solderability"
+    category: "Shelf Life"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Shelf Life"
+    relative_path: "Shelf Life/Solderability"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Shelf Life/Solderability"
+    modified: "2024-07-05 01:00:55"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Shelf Life"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Stacked_micro_vias"
+    name: "Stacked micro vias"
+    category: "Stacked micro vias"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Stacked micro vias"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Stacked micro vias"
+    modified: "2023-10-22 15:52:42"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Stacked_micro_vias_PVC_PCIE_Xelink_PCB_situation"
+    name: "PVC PCIE Xelink PCB situation"
+    category: "Stacked micro vias"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Stacked micro vias"
+    relative_path: "Stacked micro vias/PVC PCIE Xelink PCB situation"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Stacked micro vias/PVC PCIE Xelink PCB situation"
+    modified: "2023-11-03 00:23:31"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Stacked micro vias"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Stacked_micro_vias_Substrate_7x_stacked_micro_vias_was_observed"
+    name: "Substrate 7x stacked micro vias was observed"
+    category: "Stacked micro vias"
+    item_type: "Folder"
+    level: 1
+    parent_path: "Stacked micro vias"
+    relative_path: "Stacked micro vias/Substrate 7x stacked micro vias was observed"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Stacked micro vias/Substrate 7x stacked micro vias was observed"
+    modified: "2023-10-22 15:53:57"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "Stacked micro vias"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "Strain"
+    name: "Strain"
+    category: "Strain"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "Strain"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/Strain"
+    modified: "2024-11-08 00:12:57"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL"
+    name: "UPLC and iQUAL"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "UPLC and iQUAL"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL"
+    modified: "2024-07-01 23:37:50"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL_iQUAL"
+    name: "iQUAL"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 1
+    parent_path: "UPLC and iQUAL"
+    relative_path: "UPLC and iQUAL/iQUAL"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL/iQUAL"
+    modified: "2024-07-01 23:38:22"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "UPLC and iQUAL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL_iQUAL_Board_and_System_Design_for_Quality_and_Reliability_Checklist"
+    name: "Board and System Design for Quality and Reliability Checklist"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 2
+    parent_path: "UPLC and iQUAL/iQUAL"
+    relative_path: "UPLC and iQUAL/iQUAL/Board and System Design for Quality and Reliability Checklist"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL/iQUAL/Board and System Design for Quality and Reliability Checklist"
+    modified: "2024-12-04 15:01:18"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "UPLC and iQUAL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL_iQUAL_IQC"
+    name: "IQC"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 2
+    parent_path: "UPLC and iQUAL/iQUAL"
+    relative_path: "UPLC and iQUAL/iQUAL/IQC"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL/iQUAL/IQC"
+    modified: "2024-07-01 23:38:53"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "UPLC and iQUAL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL_iQUAL_RP"
+    name: "RP"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 2
+    parent_path: "UPLC and iQUAL/iQUAL"
+    relative_path: "UPLC and iQUAL/iQUAL/RP"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL/iQUAL/RP"
+    modified: "2025-03-30 19:39:14"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "UPLC and iQUAL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL_UPLC"
+    name: "UPLC"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 1
+    parent_path: "UPLC and iQUAL"
+    relative_path: "UPLC and iQUAL/UPLC"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL/UPLC"
+    modified: "2024-07-01 23:37:59"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "UPLC and iQUAL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL_UPLC_CCG_Platform_Integration"
+    name: "CCG Platform Integration"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 2
+    parent_path: "UPLC and iQUAL/UPLC"
+    relative_path: "UPLC and iQUAL/UPLC/CCG Platform Integration"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL/UPLC/CCG Platform Integration"
+    modified: "2024-07-01 23:38:12"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "UPLC and iQUAL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "UPLC_and_iQUAL_UPLC_For_DCAI"
+    name: "For DCAI"
+    category: "UPLC and iQUAL"
+    item_type: "Folder"
+    level: 2
+    parent_path: "UPLC and iQUAL/UPLC"
+    relative_path: "UPLC and iQUAL/UPLC/For DCAI"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/UPLC and iQUAL/UPLC/For DCAI"
+    modified: "2024-11-20 01:00:25"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "UPLC and iQUAL"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "XRB_Rule"
+    name: "XRB Rule"
+    category: "XRB Rule"
+    item_type: "Folder"
+    level: 0
+    parent_path: ""
+    relative_path: "XRB Rule"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/XRB Rule"
+    modified: "2024-06-13 17:58:17"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      []
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "XRB_Rule_SIMRB"
+    name: "SIMRB"
+    category: "XRB Rule"
+    item_type: "Folder"
+    level: 1
+    parent_path: "XRB Rule"
+    relative_path: "XRB Rule/SIMRB"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/XRB Rule/SIMRB"
+    modified: "2024-06-13 17:58:27"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "XRB Rule"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
+
+  - id: "XRB_Rule_SIMRB_Risk_assessment_for_expired_PVC_OAM_PCB"
+    name: "Risk assessment for expired PVC OAM PCB"
+    category: "XRB Rule"
+    item_type: "Folder"
+    level: 2
+    parent_path: "XRB Rule/SIMRB"
+    relative_path: "XRB Rule/SIMRB/Risk assessment for expired PVC OAM PCB"
+    full_path: "sites/pvc-boards/Shared Documents/Reports from Wistron/reliability report/Reference data/Intel Rule/XRB Rule/SIMRB/Risk assessment for expired PVC OAM PCB"
+    modified: "2023-11-19 00:20:44"
+    modified_by: "Lee, Shou-chin"
+    aliases:
+      - "XRB Rule"
+    retrieval_hint: "Use this folder as a rule/reference source. For documents, check folder_index.yaml."
 
