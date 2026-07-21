@@ -31,12 +31,21 @@ Domains:
 7. Supplier Readiness
 8. Regulatory
 
-Assign overall risk tier using the RPN rules in
+Assign Risk Band using the RPN rules in
 `KnowledgeBase/risk_scoring_criteria.md`:
 
-- **High Risk**: RPN ≥ 51 or any domain with Data Confidence ≤ 2
+Risk Band is determined ONLY by RPN:
+- **High Risk**: RPN ≥ 51
 - **Medium Risk**: RPN 21–50
 - **Low Risk**: RPN ≤ 20
+
+Data Confidence MUST NOT change the assigned Risk Band.
+
+Data Confidence and evidence gaps shall be evaluated separately to determine the final Disposition:
+- GO
+- CONDITIONAL APPROVE
+- HOLD
+- REJECT
 
 ---
 
