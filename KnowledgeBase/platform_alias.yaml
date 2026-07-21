@@ -6,13 +6,12 @@ platforms:
 
       - Anderson City
       - Pine Stream
-      - COR AP 20CH
 
     category:
       - RP
       - Reference Platform
 
-    CPU: COR AP
+    CPU: COR AP 20CH
 
   - platform: Sabre
 
@@ -24,7 +23,7 @@ platforms:
       - RP
       - Reference Platform
     
-    CPU: COR AP
+    CPU: COR AP 20CH
 
   - platform: Dunlow
 
@@ -45,21 +44,20 @@ platforms:
       - JNC1
       - JNC2
       - Oak stream AP 
-      - DMR AP 16CH
-      - COR AP 16CH
+
 
     category:
       - RP
       - Reference Platform
 
-      CPU: DMR AP
+      CPU: DMR AP 
 
   - platform: Basin City
 
     aliases:
 
       - BNC
-      - COR AP 8CH
+      - COR 8CH
 
     category:
       - RP
