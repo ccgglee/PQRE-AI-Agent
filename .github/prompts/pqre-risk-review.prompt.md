@@ -131,7 +131,20 @@ for the change. List each delta.
 
 Insert the RPN table from Step 4.
 
-### 9. Required Actions
+### 9. Decision Disposition
+
+For each in-scope domain report:
+
+| Domain | Risk Band | Data Confidence | Open Gaps | Disposition | Reason |
+|----------|----------|----------|----------|----------|----------|
+
+Rules:
+
+- Risk Band comes only from RPN.
+- Disposition is determined by confidence, evidence completion, and escalation rules.
+- Escalation must never overwrite Risk Band.
+
+### 10. Required Actions
 
 Numbered list. Each action must include:
 - Action description
@@ -139,16 +152,24 @@ Numbered list. Each action must include:
 - Due Date: `[TBD — assign before closure]`
 - Blocking: Yes / No (does this block sign-off?)
 
-### 10. PQRE Recommendation
+### 11. PQRE Recommendation
 
 State one of:
 
-- **APPROVE** — All evidence present, RPN < 21 across all domains.
-- **CONDITIONAL APPROVE** — Evidence gaps exist but risk is manageable;
+**APPROVE** — All evidence present, RPN < 21 across all domains.
+**CONDITIONAL APPROVE** — Evidence gaps exist but risk is manageable;
   list conditions that must be closed before final sign-off.
-- **HOLD** — Critical evidence missing or RPN ≥ 51 in any domain; do not
-  proceed until actions are resolved.
-- **REJECT** — Change cannot be supported as described; state reason.
+**HOLD** — One or more of the following applies:
+- Critical evidence required by pqre_signoff_criteria.md is missing
+- Data Confidence ≤ 2 in any in-scope domain
+- Required qualification activities are incomplete
+- Human review escalation is required
+
+A HOLD disposition does not automatically imply High Risk.
+
+Risk Band must continue to reflect the RPN score.
+  
+**REJECT** — Change cannot be supported as described; state reason.
 
 > ⚠️ Do not issue APPROVE if any `[MISSING]` items are blocking sign-off per
 > `KnowledgeBase/pqre_signoff_criteria.md`.
