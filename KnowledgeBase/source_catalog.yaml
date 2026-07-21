@@ -13,26 +13,55 @@ sources:
     contains:
 
       reliability:
+
         - Acoustic Vibration
         - Derating
-        - FOQM
         - EDM
-        - Strain
+        - FOQM
         - Shelf Life
+        - Strain
+        - ORM
+        - SBL
 
       qualification:
+
         - UPLC and iQUAL
         - iQUAL
         - ISO
+        - XRB Rule
 
       manufacturing:
+
         - FA flow
-        - Server
         - Lab and ODM requirement
+        - Server
 
       packaging:
+
         - Stacked micro vias
 
       training:
+
         - Intel Quality and Reliability Fundamentals
         - Intel GPU structure
+        - HSD system
+
+      lessons_learned:
+
+        - correct palletization for this OAM package
+
+        - low volume SRA and requirements for Revenue Shipment at Engineering Phase
+
+      review_tools:
+
+        - OPS review
+
+      specifications:
+
+        - Inspection and cosmetic spec
+
+        - Board-Level Thermal Mechanical Reliability-Certifications
+
+      characterization:
+
+        - Intel Automatic In-Board Characterization (AIBC)
