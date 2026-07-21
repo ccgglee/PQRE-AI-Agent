@@ -59,10 +59,51 @@ Rules:
 ### Decision Agent Risk Gate
 The Decision Agent must follow the Risk_Scoring tab.
 Rules:
+
+Risk Band:
 - RPN >= 51 → High Risk
-- Data Confidence <= 2 → Low Confidence
-- The Decision Agent must not override Risk_Scoring results
-- Any conflict between agent output and Risk_Scoring must be flagged for human review
+- RPN 21–50 → Medium Risk
+- RPN <= 20 → Low Risk
+
+Risk Band SHALL be derived only from RPN values.
+
+Confidence Escalation:
+- Data Confidence <= 2 → Low Confidence Escalation
+- Open evidence gaps may trigger HOLD disposition
+
+Disposition:
+- APPROVE
+- CONDITIONAL APPROVE
+- HOLD
+- REJECT
+
+The Decision Agent must never overwrite or reclassify a Risk Band based on confidence, missing evidence, or escalation rules.
+
+Confidence and evidence gaps affect Disposition only.
+
+Any mismatch between:
+- Risk Band
+- Disposition
+- Risk_Scoring results
+
+must be flagged for human review.
+
+### Risk Band Protection Rule
+
+Risk Band and Disposition are independent fields.
+
+Risk Band:
+- Derived solely from RPN scoring
+- Cannot be modified by escalation logic
+- Cannot be overridden by agent reasoning
+
+Disposition:
+- Determined from confidence level
+- Determined from evidence completeness
+- Determined from escalation rules
+- Determines GO/HOLD decision
+
+Escalation rules may change Disposition but must never change Risk Band.
 
 ## Prompt Governance Rules
 
