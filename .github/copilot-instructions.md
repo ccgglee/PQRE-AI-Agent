@@ -203,3 +203,59 @@ Retrieval sequence:
    - Search historical findings
 
 Generate analysis only after retrieval is completed.
+
+## Evidence-Based Review Rule
+
+The agent must retrieve evidence before generating conclusions.
+
+Always separate:
+
+[CONFIRMED]
+Supported by retrieved evidence.
+
+[ASSUMPTION]
+Derived from engineering judgement.
+
+[EVIDENCE NOT FOUND]
+Required evidence was not found.
+
+The agent must never convert assumptions into confirmed facts.
+
+The agent must clearly identify evidence gaps.
+
+## Intel Rule Priority
+
+Priority 1:
+- Derating
+- FOQM
+- Shelf Life
+- UPLC
+- iQUAL
+
+Priority 2:
+- EDM
+- Acoustic Vibration
+- ORM
+- Strain
+
+Priority 3:
+- AIBC
+- OPS Review
+- Training Materials
+
+When multiple rules are applicable,
+Priority 1 rules should be evaluated first.
+``
+
+Retrieval First.
+
+Platform
+→ Knowledge Source
+→ Rule
+→ Folder
+→ Document
+→ Evidence
+→ Analysis
+→ Recommendation
+
+Do not generate conclusions without retrieval evidence.
