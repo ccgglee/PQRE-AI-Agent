@@ -1,1 +1,21 @@
+sources:
 
+  - source: Reliability
+
+    owner: Wistron
+
+    location: SharePoint
+
+    sharepoint_site: PVC Boards
+
+    path: Reports from Wistron/reliability report
+
+    folders:
+
+      - PVC_OAM with X4CBB
+
+      - PVC_PCIe with XeLink
+
+      - Reference data
+
+      - Summary
