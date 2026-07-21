@@ -160,3 +160,46 @@ store it in Prompts.
 Prompts define HOW to analyze.
 
 KnowledgeBase defines WHAT to know.
+
+## Knowledge Retrieval Workflow
+
+Before generating any engineering review, retrieve relevant knowledge from KnowledgeBase.
+
+Always perform retrieval before analysis.
+
+Retrieval sequence:
+
+1. platform_alias.yaml
+   - Resolve platform aliases
+   - Map ANC, DMR, COR, Sabre, PVC and other platform names
+
+2. source_catalog.yaml
+   - Identify knowledge domain
+   - Reliability
+   - Qualification
+   - Manufacturing
+   - Packaging
+   - Training
+   - Specifications
+
+3. intel_rule_taxonomy.yaml
+   - Map engineering topic to applicable Intel rules
+
+4. intel_rule_catalog.yaml
+   - Locate rule folder
+   - Identify available references
+
+5. folder_index.yaml
+   - Locate supporting documents
+   - PDFs
+   - PPTs
+   - DOCs
+   - MSGs
+   - XLS files
+
+6. reviews/*.md
+   - Search previous reviews
+   - Search lessons learned
+   - Search historical findings
+
+Generate analysis only after retrieval is completed.
