@@ -1,1 +1,85 @@
+sources:
 
+  - source: Intel_Rule
+
+    location: SharePoint
+
+    owner:
+      - Lee, Shou-chin
+
+    description:
+      Intel reliability and quality reference documents.
+
+    root_folder:
+      Reports from Wistron/reliability report/Reference data/Intel Rule
+
+    contains:
+
+      - Acoustic Vibration
+
+      - Board-Level Thermal Mechanical Reliability-Certifications
+
+      - correct palletization for this OAM package
+
+      - Derating
+
+      - EDM
+
+      - FA flow
+
+      - FOQM
+
+      - HSD system
+
+      - Inspection and cosmetic spec
+
+      - Intel Automatic In-Board Characterization (AIBC)
+
+      - Intel GPU structure
+
+      - Intel Quality and Reliability Fundamentals
+
+      - iQUAL
+
+      - ISO
+
+      - Lab and ODM requirement
+
+      - low volume SRA and requirements for Revenue Shipment at Engineering Phase
+
+      - LTS
+
+      - OPS review
+
+      - ORM
+
+      - SBL
+
+      - Server
+
+      - Shelf Life
+
+      - Stacked micro vias
+
+      - Strain
+
+      - UPLC and iQUAL
+
+      - XRB Rule
+    ``
+
+  - source: PVC_Reliability
+
+    location: SharePoint
+
+    owner:
+      - Lee, Shou-chin
+
+    root_folder:
+      Reports from Wistron/reliability report
+
+    contains:
+      - PVC_OAM with X4CBB
+      - PVC_PCIe with XeLink
+      - Summary
+      - Reference data
