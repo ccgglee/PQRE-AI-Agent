@@ -67,8 +67,8 @@ For each domain, list:
 
 For each in-scope domain, produce an RPN row:
 
-| Domain | Severity (S) | Occurrence (O) | Detection (D) | RPN = S×O×D | Data Confidence | Risk Tier |
-|--------|-------------|----------------|---------------|-------------|-----------------|-----------|
+| Domain | Severity (S) | Occurrence (O) | Detection (D) | RPN = S×O×D | Risk Band | Data Confidence | Escalation Reason  | Disposition |
+|--------|-------------|----------------|---------------|-------------|-----------------|-----------------|-------------------|-------------------|
 
 Use the scoring guide in `KnowledgeBase/risk_scoring_criteria.md`.
 
