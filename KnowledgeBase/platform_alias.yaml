@@ -1,1 +1,68 @@
+platforms:
 
+  - platform: ANC
+
+    aliases:
+
+      - Anderson City
+      - Pine Stream
+      - COR AP 20CH
+
+    category:
+      - RP
+      - Reference Platform
+
+    CPU: COR AP
+
+  - platform: Sabre
+
+    aliases:
+
+      - Sabre City
+
+    category:
+      - RP
+      - Reference Platform
+    
+    CPU: COR AP
+
+  - platform: Dunlow
+
+    aliases:
+
+      - Dunlow
+
+    category:
+      - RP
+      - Reference Platform
+      
+      CPU: Xeon E
+
+  - platform: Johnson City
+
+    aliases:
+
+      - JNC1
+      - JNC2
+      - Oak stream AP 
+      - DMR AP 16CH
+      - COR AP 16CH
+
+    category:
+      - RP
+      - Reference Platform
+
+      CPU: DMR AP
+
+  - platform: Basin City
+
+    aliases:
+
+      - BNC
+      - COR AP 8CH
+
+    category:
+      - RP
+      - Reference Platform
+
+      CPU: COR SP
