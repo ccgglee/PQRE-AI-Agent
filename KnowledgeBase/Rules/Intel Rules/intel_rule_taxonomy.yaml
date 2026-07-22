@@ -1,1 +1,169 @@
+topics:
 
+  Reliability:
+
+    rules:
+      - Acoustic Vibration
+      - Derating
+      - EDM
+      - FOQM
+      - Shelf Life
+      - Strain
+      - ORM
+      - SBL
+
+    keywords:
+      - reliability
+      - failure
+      - stress
+      - degradation
+      - lifetime
+      - qualification
+
+  Qualification:
+
+    rules:
+      - UPLC and iQUAL
+      - iQUAL
+      - ISO
+      - XRB Rule
+
+    keywords:
+      - qualification
+      - release
+      - signoff
+      - certification
+      - readiness
+
+  Materials:
+
+    rules:
+      - Shelf Life
+      - EDM
+      - Derating
+
+    keywords:
+      - material
+      - component
+      - storage
+      - expiration
+
+  Packaging:
+
+    rules:
+      - Stacked micro vias
+
+    keywords:
+      - package
+      - substrate
+      - microvia
+      - pcb
+
+  Mechanical:
+
+    rules:
+      - Acoustic Vibration
+      - Strain
+      - Board-Level Thermal Mechanical Reliability-Certifications
+
+    keywords:
+      - vibration
+      - shock
+      - strain
+      - thermal cycle
+
+  Manufacturing:
+
+    rules:
+      - FOQM
+      - FA flow
+      - Lab and ODM requirement
+      - Server
+
+    keywords:
+      - fab
+      - assembly
+      - process
+      - manufacturing
+      - odm
+
+  Failure_Analysis:
+
+    rules:
+      - FA flow
+      - EDM
+
+    keywords:
+      - failure analysis
+      - fa
+      - root cause
+      - defect
+
+  Quality:
+
+    rules:
+      - Intel Quality and Reliability Fundamentals
+      - FOQM
+      - UPLC and iQUAL
+      - XRB Rule
+
+    keywords:
+      - quality
+      - audit
+      - quality system
+      - compliance
+
+  Inspection:
+
+    rules:
+      - Inspection and cosmetic spec
+
+    keywords:
+      - inspection
+      - cosmetic
+      - defect
+      - appearance
+
+  Training:
+
+    rules:
+      - Intel Quality and Reliability Fundamentals
+      - Intel GPU structure
+      - HSD system
+
+    keywords:
+      - knowledge
+      - learning
+      - training
+
+  Characterization:
+
+    rules:
+      - Intel Automatic In-Board Characterization (AIBC)
+
+    keywords:
+      - characterization
+      - data collection
+      - monitoring
+
+  Review_Process:
+
+    rules:
+      - OPS review
+
+    keywords:
+      - review
+      - ops
+      - checkpoint
+
+  Special_Topics:
+
+    rules:
+      - correct palletization for this OAM package
+      - low volume SRA and requirements for Revenue Shipment at Engineering Phase
+
+    keywords:
+      - palletization
+      - low volume
+      - engineering phase
+      - revenue shipment
