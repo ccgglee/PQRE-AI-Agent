@@ -10,8 +10,8 @@ Summary reports submitted in issue #163.
 
 | Parameter | Value | Notes |
 |-----------|-------|-------|
-| Test type | Temperature Cycle (TC) | Board-level solder joint stress |
-| Power state | **Powered on (active)** | CPU and platform components energised during cycling |
+| Test type | Temperature Cycle (TC) | Board-level solder joint fatigue assessment |
+| Power state | **Unpowered** | No power applied during temperature cycling |
 | Max temperature | **100 °C** | Upper dwell temperature |
 | Primary purpose | CPU socket solder joint accelerated life testing | Covers BGA/LGA solder fatigue failure modes |
 | Platform | JNC1 / JNC2 (DMR AP Reference Platform) | Johnson City RP |
@@ -22,8 +22,8 @@ Summary reports submitted in issue #163.
 
 | Cycle Count | Lifetime Coverage | Notes |
 |-------------|------------------|-------|
-| **300 cycles** | > 3 years field lifetime | Minimum recommendation for reference platform qualification |
-| **525 cycles** | Extended coverage | Recommended for higher confidence / longer service life assertion |
+| **325 cycles** | 3-year field lifetime | Recommended qualification target |
+| **525 cycles** | 5-year field lifetime | Recommended for extended life coverage |
 
 > Source: Issue #163 — Reliability stress summary JNC1.pdf / JNC2.pdf
 >
@@ -36,43 +36,21 @@ Summary reports submitted in issue #163.
 
 ## Engineering Context
 
-- Temperature Cycle stress is run **with power applied** (上電). This is
-  intentional: it subjects the CPU socket and BGA solder joints to combined
-  thermal cycling and electrical stress, providing a more conservative and
-  realistic accelerated aging condition than unpowered cycling.
+- Temperature Cycle (TC/TCT) stress is performed under **unpowered conditions**.
+  No electrical power is applied to the CPU or platform during cycling. The
+  objective is to accelerate thermo-mechanical fatigue in solder joints caused
+  by repeated temperature excursions.
 
 - Elevating the upper dwell temperature to **100 °C** increases the thermal
-  excursion (ΔT) and accelerates solder fatigue per Coffin–Manson / modified
-  Engelmaier models, shortening the time needed to accumulate equivalent
-  field-life cycles.
+  excursion (ΔT) and accelerates solder fatigue per Coffin-Manson /
+  modified Engelmaier models, shortening the time required to accumulate
+  equivalent field-life damage.
 
-- The **300-cycle milestone** maps to a > 3-year field lifetime assertion for a
-  typical datacenter reference platform usage profile.
+- The **325-cycle milestone** is commonly used to support a **3-year product
+  life** requirement for the JNC reference platform.
 
-- The **525-cycle milestone** provides the extended confidence margin often
-  required for volume production qualification sign-off or longer service life
-  claims.
-
----
-
-## Source Documents
-
-| Document | Issue |
-|----------|-------|
-| Reliability stress summary JNC1.pdf | #163 |
-| Reliability stress summary JNC2.pdf | #163 |
+- The **525-cycle milestone** is commonly used to support a **5-year product
+  life** requirement and provides additional confidence margin for long-life
+  datacenter deployments.
 
 ---
-
-## Usage Guidance for Future Reviews
-
-When a subsequent RP program (for example ANC, Sabre) cites JNC TC data:
-
-1. Confirm the new platform's max junction temperature and thermal excursion
-   are **within or below** the JNC test envelope (100 °C upper dwell).
-2. Confirm the new board's solder material system, PCB layer count, and
-   component weight distribution are equivalent to JNC.
-3. If both conditions are met → **data reuse may be approved** (subject to
-   formal delta analysis sign-off).
-4. If either condition is not met → **supplemental TC testing at the
-   applicable cycle count (300 or 525) is required** before PQRE sign-off.
