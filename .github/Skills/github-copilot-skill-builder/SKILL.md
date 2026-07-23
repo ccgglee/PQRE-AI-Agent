@@ -7,9 +7,18 @@ description: Convert domain knowledge and workflow information into reusable Git
 
 ## Purpose
 
-This skill helps users transform their engineering or business workflow into a reusable GitHub Copilot repository structure.
+This skill helps users transform their engineering or business workflow into reusable GitHub Copilot repository assets.
 
-The skill guides the user through an interview process, captures domain-specific workflow knowledge, and generates starter repository assets for GitHub Copilot adoption.
+The primary purpose of this skill is repository asset generation, not review report generation.
+
+Repository assets include:
+
+- README
+- Agent definitions
+- Prompt files
+- Knowledge Base files
+- Source catalogs
+- Copilot instructions
 
 ---
 
@@ -46,6 +55,69 @@ When this skill is used, follow these steps:
 7. Mark missing information as `TBD`.
 8. Do not invent evidence, criteria, or source locations.
 9. Require human review before final approval or workflow signoff.
+
+---
+
+## Repository Asset Generation
+
+When the user requests repository generation, agent generation, prompt generation, knowledge base generation, README generation, or GitHub Copilot setup:
+
+DO NOT generate only a review report.
+
+Instead, generate complete repository assets based on skill-output-template.md.
+
+Repository asset generation takes priority over risk review report generation.
+
+Generate full contents for every required file.
+
+Required output files:
+
+- README.generated.md
+- reliability-review-agent.generated.md
+- reliability-review.prompt.generated.md
+- domain_criteria.generated.md
+- source_index.generated.yaml
+
+For each file:
+
+1. Show the target filename.
+2. Generate complete file content.
+3. Use markdown code blocks.
+4. Do not summarize.
+5. Do not return partial content.
+6. Generate files in copy-and-paste-ready format.
+
+The generated files must be consistent with:
+
+- interview-template.md
+- skill-output-template.md
+
+If information is missing:
+
+- Mark as TBD.
+- Do not invent facts.
+- Do not invent evidence.
+- Do not invent source locations.
+
+Output order:
+
+1. Repository structure
+2. README.generated.md
+3. reliability-review-agent.generated.md
+4. reliability-review.prompt.generated.md
+5. domain_criteria.generated.md
+6. source_index.generated.yaml
+7. Review checklist
+
+Repository asset generation is the preferred output whenever the user requests:
+
+- Create a GitHub Copilot repository
+- Generate an Agent
+- Generate prompts
+- Generate a knowledge base
+- Generate repository assets
+- Skill builder
+- Repository template
 
 ---
 
