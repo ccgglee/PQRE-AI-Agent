@@ -119,6 +119,23 @@ Repository asset generation is the preferred output whenever the user requests:
 - Skill builder
 - Repository template
 
+Generate ALL files defined in skill-output-template.md.
+
+Do not stop after generating README.
+
+Continue until all files are completed.
+
+Required completion criteria:
+
+- README.generated.md
+- copilot-instructions.generated.md
+- reliability-review-agent.generated.md
+- reliability-review.prompt.generated.md
+- domain_criteria.generated.md
+- source_index.generated.yaml
+
+Output is not complete until every file has been generated.
+
 ---
 
 ## Guardrails
@@ -149,6 +166,39 @@ When generating repository assets:
 
 ---
 
+## Full File Generation Rules
+
+When generating repository assets:
+
+ALWAYS generate complete file contents.
+
+NEVER generate summaries.
+
+NEVER truncate files.
+
+NEVER replace sections with "...".
+
+NEVER use placeholders such as:
+
+- Content omitted
+- Example only
+- Continue here
+- Remaining sections
+
+Every generated file must be complete and ready for direct copy into GitHub.
+
+For each file:
+
+1. Display filename.
+2. Generate full content.
+3. Include all required sections.
+4. Use proper markdown formatting.
+5. Return the entire file in a single response.
+
+The user should be able to copy each generated file directly into the repository without additional editing.
+
+---
+
 ## Recommended Output Order
 
 Generate outputs in this order:
@@ -176,3 +226,198 @@ Before finalizing the generated assets, check:
 - Are human review gates included?
 - Are unknown items marked as `TBD`?
 - Are assumptions separated from confirmed facts?
+
+---
+
+## File Creation Mode
+
+When user requests repository generation:
+
+Create new files in repository.
+
+Never overwrite existing files.
+
+Never modify:
+
+README.md
+
+.github/copilot-instructions.md
+
+.github/agents/*
+
+.github/prompts/*
+
+KnowledgeBase/*
+
+reviews/*
+
+Create only new files under:
+
+generated/
+
+If generated folder does not exist:
+
+create it.
+
+All generated files must use:
+
+.generated.md
+.generated.yaml
+
+suffix.
+
+---
+
+## Safe Repository Write Mode
+
+When user explicitly requests file creation:
+
+Create NEW files only.
+
+Never overwrite existing files.
+
+Never modify:
+
+README.md
+
+.github/copilot-instructions.md
+
+.github/agents/*
+
+.github/prompts/*
+
+KnowledgeBase/*
+
+reviews/*
+
+Always write generated assets under:
+
+generated/
+
+If the folder does not exist:
+
+create it.
+
+Use file suffix:
+
+.generated.md
+.generated.yaml
+
+Examples:
+
+generated/reliability-review/README.generated.md
+
+generated/reliability-review/copilot-instructions.generated.md
+
+generated/reliability-review/reliability-review-agent.generated.md
+
+generated/reliability-review/reliability-review.prompt.generated.md
+
+generated/reliability-review/domain_criteria.generated.md
+
+generated/reliability-review/source_index.generated.yaml
+
+---
+
+## Pull Request Mode
+
+When repository write is requested:
+
+1. Generate repository assets.
+2. Create files only under generated/.
+3. Present file list to user.
+4. Request user review.
+5. User approves.
+6. Create Pull Request.
+7. Human review before merge.
+
+Never directly modify production repository assets.
+
+Never directly overwrite:
+
+README.md
+
+.github/copilot-instructions.md
+
+.github/agents/*
+
+.github/prompts/*
+
+KnowledgeBase/*
+
+---
+
+## Production Promotion Mode
+
+Only after human approval:
+
+generated/reliability-review/*.generated.*
+
+can be copied into:
+
+README.md
+
+.github/agents/
+
+.github/prompts/
+
+KnowledgeBase/
+
+Production promotion must be a separate step.
+
+Do not automatically replace production files.
+
+---
+
+## Agent Write Permission Rules
+
+Default mode:
+
+- Generate content only.
+- Do not create files.
+- Do not modify repository.
+
+If the user explicitly requests:
+
+- Create files
+- Write files
+- Save files
+- Create repository assets
+
+Then:
+
+1. Present planned file list.
+2. Confirm target folder.
+3. Create files only under generated/.
+4. Never overwrite existing files.
+5. Never modify production repository assets.
+
+Production assets include:
+
+README.md
+
+.github/copilot-instructions.md
+
+.github/agents/*
+
+.github/prompts/*
+
+KnowledgeBase/*
+
+reviews/*
+
+Repository write operations must be limited to:
+
+generated/
+
+Examples:
+
+generated/reliability-review/
+
+generated/regulatory-review/
+
+generated/mechanical-review/
+
+generated/thermal-review/
+
+generated/si-review/
