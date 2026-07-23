@@ -1,32 +1,31 @@
 ---
-name: mtbf-review
-description: Review MTBF predictions and evaluate adequacy for PQRE signoff.
+name: reliability-review
+description: Review reliability reports, identify qualification gaps, evaluate risk level, and prepare PQRE executive summary.
 ---
 
 # Workflow
 
-1. Read MTBF report.
+1. Read reliability report.
 
 2. Load references:
 
-   - ../../KnowledgeBase/platform/rp_board_mtbf_guidance.md
-   - ../../KnowledgeBase/Rules/pqre_signoff_criteria.md
+   - ../../KnowledgeBase/Rules/Intel Rules/intel_rule_catalog.yaml
+   - ../../KnowledgeBase/Rules/Intel Rules/risk_scoring_criteria.md
+   - ../../KnowledgeBase/Rules/Intel Rules/pqre_signoff_criteria.md
+   - ../../KnowledgeBase/platform/platform_alias.yaml
 
-3. Compare:
+3. Identify:
+   - Test coverage
+   - Qualification status
+   - Open gaps
+   - Failure mechanisms
 
-   - ODM Prediction
-   - Historical RMA Data
-   - Qualification Evidence
+4. Evaluate risk according to risk_scoring_criteria.
 
-4. Identify:
+5. Verify qualification readiness according to pqre_signoff_criteria.
 
-   - Missing Evidence
-   - MTBF Gaps
-   - Customer Concerns
-
-5. Generate:
-
-   - MTBF Assessment
-   - Risks
+6. Generate:
    - Executive Summary
+   - Key Findings
+   - Open Actions
    - Recommendation
